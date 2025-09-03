@@ -80,6 +80,7 @@ int main() {
     printf("------------------------------------\n");
 
 
+    
     return 0;
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
