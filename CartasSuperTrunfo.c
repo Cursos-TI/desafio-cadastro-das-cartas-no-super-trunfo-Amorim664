@@ -14,7 +14,9 @@ int main() {
     float pib, área;
     char estado, nome_da_cidade [20], código_da_cidade [4];
 
-    // Definição da leitura dos dados do usuário - uso o printf
+    // Definição da leitura dos dados do usuário - uso o printf e scanf - Carta 01
+
+    printf("---- Dados da Carta 01------\n");
 
     printf("Informe uma letra entre [A à H]: ");
     scanf("%s", &estado);
@@ -25,10 +27,57 @@ int main() {
     printf("Informe o nome do estado: ");
     scanf("%s", &nome_da_cidade);
 
+    printf("Informe a quantidade da população: ");
+    scanf("%d", &população);
+
+    printf("Informe a área em km ²: ");
+    scanf("%f", &área);
+
+    printf("Informe a quantidade do PID: ");
+    scanf("%f", &pib);
+
+    printf("Informe a quantidade de pontos turísticos: ");
+    scanf("%d", &números_pontos_turisticos);
+
+    // Definição da impressão dos dados - carta 01
 
 
+    printf(" Carta 1:\n");
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB; %.2f\n Números de Pontos Turísticos: %d\n ", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos);
+
+    // Definição da leitura dos dados do usuário - uso o printf e scanf - Carta 02
+
+    printf("------Dados da carta 02------\n");
+
+    printf("Informe uma letra entre [A à H]: ");
+    scanf("%s", &estado);
+
+    printf("Informe o código da carta [digite estado + 01 à 04]: ");
+    scanf("%s", &código_da_cidade);
+
+    printf("Informe o nome do estado: ");
+    scanf("%s", &nome_da_cidade);
+
+    printf("Informe a quantidade da população: ");
+    scanf("%d", &população);
+
+    printf("Informe a área em km ²: ");
+    scanf("%f", &área);
+
+    printf("Informe a quantidade do PID: ");
+    scanf("%f", &pib);
+
+    printf("Informe a quantidade de pontos turísticos: ");
+    scanf("%d", &números_pontos_turisticos);
+
+    // Definição da impressão dos dados - carta 02
 
 
+    printf(" Carta 2:\n");
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB; %.2f\n Números de Pontos Turísticos: %d\n ", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos);
+
+
+    return 0;
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -41,5 +90,5 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    
 }
