@@ -16,7 +16,7 @@ int main() {
 
     // Definição da leitura dos dados do usuário - uso o printf e scanf - Carta 01
 
-    printf("---- Dados da Carta 01------\n");
+    printf("-----DADOS DA CARTA 01------\n");
 
     printf("Informe uma letra entre [A à H]: ");
     scanf("%s", &estado);
@@ -42,12 +42,14 @@ int main() {
     // Definição da impressão dos dados - carta 01
 
 
+    printf("-----RESULTADO DA CARTA 01-------\n");
     printf(" Carta 1:\n");
     printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB; %.2f\n Números de Pontos Turísticos: %d\n ", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos);
+    printf("---------------------------------\n");
 
     // Definição da leitura dos dados do usuário - uso o printf e scanf - Carta 02
 
-    printf("------Dados da carta 02------\n");
+    printf("------DADOS DA CARTA 02------\n");
 
     printf("Informe uma letra entre [A à H]: ");
     scanf("%s", &estado);
@@ -72,9 +74,10 @@ int main() {
 
     // Definição da impressão dos dados - carta 02
 
-
+    printf("-------RESULTADO DA CARTA 02-------\n");
     printf(" Carta 2:\n");
     printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB; %.2f\n Números de Pontos Turísticos: %d\n ", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos);
+    printf("------------------------------------\n");
 
 
     return 0;
