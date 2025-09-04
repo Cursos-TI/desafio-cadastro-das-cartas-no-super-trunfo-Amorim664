@@ -11,8 +11,8 @@ int main() {
     // Definição das variáveis
 
     int população, números_pontos_turisticos;
-    float pib, área;
-    char estado, nome_da_cidade [20], código_da_cidade [4];
+    float pib, área, calculo_densidade, pib_percapita;
+    char estado, nome_da_cidade[20], código_da_cidade[4];
 
     // Definição da leitura dos dados do usuário - uso o printf e scanf - Carta 01
 
@@ -39,12 +39,16 @@ int main() {
     printf("Informe a quantidade de pontos turísticos: ");
     scanf("%d", &números_pontos_turisticos);
 
-    // Definição da impressão dos dados - carta 01
+    // Calculos (Densidade polulacional e PIB per capita) - Carta 01
 
+    calculo_densidade = (float) população / área;
+    pib_percapita = (float) pib / população;
+
+    // Definição da impressão dos dados - carta 01
 
     printf("-----RESULTADO DA CARTA 01-------\n");
     printf(" Carta 1:\n");
-    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB; %.2f\n Números de Pontos Turísticos: %d\n ", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos);
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB: %.2f\n Números de Pontos Turísticos: %d\n Densidade populacional: %.2f hab/km²\n Pib per capita: %.2f reais\n", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos, calculo_densidade, pib_percapita);
     printf("---------------------------------\n");
 
     // Definição da leitura dos dados do usuário - uso o printf e scanf - Carta 02
@@ -72,14 +76,17 @@ int main() {
     printf("Informe a quantidade de pontos turísticos: ");
     scanf("%d", &números_pontos_turisticos);
 
+    // Calculos (Densidade polulacional e PIB per capita) - Carta 02
+
+    calculo_densidade = (float) população / área;
+    pib_percapita = (float) pib / população;
+
     // Definição da impressão dos dados - carta 02
 
     printf("-------RESULTADO DA CARTA 02-------\n");
     printf(" Carta 2:\n");
-    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB; %.2f\n Números de Pontos Turísticos: %d\n ", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos);
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB: %.2f\n Números de Pontos Turísticos: %d\n Densidade Populacional: %.2f hab/km²\n Pib per capita: %.2f reais\n", estado, código_da_cidade, nome_da_cidade, população, área, pib, números_pontos_turisticos, calculo_densidade, pib_percapita);
     printf("------------------------------------\n");
-
-
     
     return 0;
 
