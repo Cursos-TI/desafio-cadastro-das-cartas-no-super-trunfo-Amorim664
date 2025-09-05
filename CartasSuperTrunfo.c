@@ -13,7 +13,10 @@ int main() {
     int populacaoA, populacaoB, numeros_pontos_turisticosA, numeros_pontos_turisticosB;
     float pibA, pibB, areaA, areaB, calculo_densidadeA, calculo_densidadeB, pib_percapitaA, pib_percapitaB;
     char estadoA, estadoB;
-    char nome_da_cidadeA[20], nome_da_cidadeB[20], codigo_da_cidadeA[4], codigo_da_cidadeB[4];
+    char nome_da_cidadeA[20];
+    char nome_da_cidadeB[20];
+    char codigo_da_cidadeA[4];
+    char codigo_da_cidadeB[4];
     int resultado_populacao, resultado_pontos_turisticos, resultado_pib, resultado_area, resultado_densidade, resultado_pib_percapita, resultado_estado, resultado_super_poder;
     unsigned int super_poderA, super_poderB;
 
