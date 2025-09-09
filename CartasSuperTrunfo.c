@@ -104,12 +104,41 @@ int main() {
   // Teste Lógico
 
   if (populacaoA > populacaoB){
-    printf("Carta 1 - (%c) Venceu!", estadoA);
+    printf("População: Carta 1 - (%s) Venceu!\n", nome_da_cidadeA);
   }else{
-    printf("Carta 2 - (%c) Venceu!", estadoB)
+    printf("População: Carta 2 - (%s) Venceu!\n", nome_da_cidadeB);
   }
 
-  
+  if (areaA > areaB){
+    printf("Área: Carta 1 - (%s) Venceu!\n", nome_da_cidadeA);
+  }else{
+    printf("Área: Carta 2 - (%s) Venceu!\n", nome_da_cidadeB);
+  }
+
+  if (pibA > pibB){
+    printf("PIB: Carta 1 - (%s) Venceu!\n", nome_da_cidadeA);
+  }else{
+    printf("PIB: Carta 2 - (%s) Venceu!\n", nome_da_cidadeB);
+  }
+
+  if (numeros_pontos_turisticosA > numeros_pontos_turisticosB){
+    printf("Pontos Turísticos: Carta 1 - (%s) Venceu!\n", nome_da_cidadeA);
+  }else{
+    printf("Pontos Turísticos: Carta 2 - (%s) Venceu!\n", nome_da_cidadeB);
+  }
+
+  if (calculo_densidadeA < calculo_densidadeB){
+    printf("Densidade Populacional: Carta 1 - (%s) Venceu!\n", nome_da_cidadeA);
+  }else{
+    printf("Densidae Populacional: Carta 2 - (%s) Venceu!\n", nome_da_cidadeB);
+  }
+
+  if (pib_percapitaA > pib_percapitaB){
+    printf("PIB per Capita: Carta 1 - (%s) Venceu!\n", nome_da_cidadeA);
+  }else{
+    printf("PIB per Capita: Carta 2 - (%s) Venceu!\n", nome_da_cidadeB);
+  }
+
 
 
 
