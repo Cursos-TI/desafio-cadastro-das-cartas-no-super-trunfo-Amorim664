@@ -26,22 +26,16 @@ int main() {
 
     printf("Informe uma letra entre [A à H]: ");
     scanf("%s", &estadoA);
-
     printf("Informe o código da carta [digite estado + 01 à 04]: ");
     scanf("%s", &codigo_da_cidadeA);
-
     printf("Informe o nome do estado: ");
     scanf("%s", &nome_da_cidadeA);
-
     printf("Informe a quantidade da população: ");
     scanf("%d", &populacaoA);
-
     printf("Informe a área em km ²: ");
     scanf("%f", &areaA);
-
     printf("Informe a quantidade do PID: ");
     scanf("%f", &pibA);
-
     printf("Informe a quantidade de pontos turísticos: ");
     scanf("%d", &numeros_pontos_turisticosA);
 
@@ -65,22 +59,16 @@ int main() {
 
     printf("Informe uma letra entre [A à H]: ");
     scanf("%s", &estadoB);
-
     printf("Informe o código da carta [digite estado + 01 à 04]: ");
     scanf("%s", &codigo_da_cidadeB);
-
     printf("Informe o nome do estado: ");
     scanf("%s", &nome_da_cidadeB);
-
     printf("Informe a quantidade da população: ");
     scanf("%d", &populacaoB);
-
     printf("Informe a área em km ²: ");
     scanf("%f", &areaB);
-
     printf("Informe a quantidade do PID: ");
     scanf("%f", &pibB);
-
     printf("Informe a quantidade de pontos turísticos: ");
     scanf("%d", &numeros_pontos_turisticosB);
 
@@ -94,6 +82,7 @@ int main() {
     // Analise comparativa
 
 
+    /*
     resultado_area = areaA < areaB;
     resultado_densidade = calculo_densidadeA < calculo_densidadeB;
     resultado_estado = estadoA < estadoB;
@@ -102,6 +91,7 @@ int main() {
     resultado_pontos_turisticos = numeros_pontos_turisticosA < numeros_pontos_turisticosB;
     resultado_populacao = populacaoA < populacaoB;
     resultado_super_poder = super_poderA < super_poderB;
+    */
 
     
     // Definição da impressão dos dados - carta 02
@@ -111,8 +101,22 @@ int main() {
     printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f Km²\n PIB: %.2f\n Números de Pontos Turísticos: %d\n Densidade Populacional: %.2f hab/km²\n Pib per capita: %.2f reais\n", estadoB, codigo_da_cidadeB, nome_da_cidadeB, populacaoB, areaB, pibB, numeros_pontos_turisticosB, calculo_densidadeB, pib_percapitaB);
     printf("------------------------------------\n");
 
+  // Teste Lógico
+
+  if (populacaoA > populacaoB){
+    printf("Carta 1 - (%c) Venceu!", estadoA);
+  }else{
+    printf("Carta 2 - (%c) Venceu!", estadoB)
+  }
+
+  
+
+
+
+
     // Resultado da comparação
 
+    /*
     printf("------RESULTADO DA COMPARAÇÃO DAS CARTAS---------\n ");
     printf("(1 - Carta 01 venceu) se (0 - Carta 02 venceu) População:  %d\n", resultado_populacao);
     printf(" (1 - Carta 01 venceu) se (0 - Carta 02 venceu) Área: %d\n", resultado_area);
@@ -121,7 +125,11 @@ int main() {
     printf(" (1 - Carta 01 venceu) se (0 - Carta 02 venceu) Densidade Populacional: %d\n", resultado_densidade);
     printf(" (1 - Carta 01 venceu) se (0 - Carta 02 venceu) PIB per capita: %d\n", resultado_pib_percapita);
     printf(" (1 - Carta 01 venceu) se (0 - Carta 02 venceu) Super Poder: %d\n",resultado_super_poder);
-    
+    */
+
+
+
+
     return 0;
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
